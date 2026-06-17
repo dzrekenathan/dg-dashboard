@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     secret_key: str = "change-me-in-production"
     algorithm: str = "HS256"
     access_token_expire_minutes: int = 10080
-    frontend_url: str = "http://localhost:5173"
+    frontend_url: str = "https://dgreneral-dashboard.netlify.app"
 
 
 settings = Settings()
