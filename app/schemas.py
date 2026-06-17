@@ -18,13 +18,12 @@ class TokenResponse(BaseModel):
 
 
 class UserOut(BaseModel):
-    id: int
+    id: str  # was int
     email: str
     name: str
     role: str
 
     model_config = {"from_attributes": True}
-
 
 # ── Tasks ─────────────────────────────────────────────────────────────────────
 

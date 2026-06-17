@@ -2,11 +2,15 @@ from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, Asyn
 from sqlalchemy.orm import DeclarativeBase
 from app.config import settings
 
+# TEMPORARY DEBUG - remove after fixing
+print(f"DATABASE_URL value: '{settings.database_url}'")
+print(f"DATABASE_URL type: {type(settings.database_url)}")
+
 engine = create_async_engine(
     settings.database_url,
     echo=False,
     pool_pre_ping=True,
-    connect_args={"ssl": "require"},  # SSL handled here, not in the URL string
+    connect_args={"ssl": "require"},
 )
 AsyncSessionLocal = async_sessionmaker(engine, expire_on_commit=False, class_=AsyncSession)
 
