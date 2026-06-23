@@ -11,8 +11,18 @@ from app.core.security import hash_password
 
 
 USERS = [
-    {"email": "dg@clet.gov.gh",         "name": "Director General", "password": "CLET@DG2026",   "role": "dg"},
-    {"email": "management@clet.gov.gh",  "name": "Management User",  "password": "CLET@Mgmt2026", "role": "management"},
+    {"email": "dg@clet.gov.gh",           "name": "Director General",        "password": "CLET@DG2026",    "role": "dg",         "directorate": None},
+    {"email": "gsl@clet.gov.gh",           "name": "GSL Management",          "password": "CLET@GSL2026",   "role": "management", "directorate": "GSL"},
+    {"email": "dti@clet.gov.gh",           "name": "DTI Management",          "password": "CLET@DTI2026",   "role": "management", "directorate": "DTI"},
+    {"email": "cdt@clet.gov.gh",           "name": "CDT Management",          "password": "CLET@CDT2026",   "role": "management", "directorate": "CDT"},
+    {"email": "aqai@clet.gov.gh",          "name": "AQAI Management",         "password": "CLET@AQAI2026",  "role": "management", "directorate": "AQAI"},
+    {"email": "lrks@clet.gov.gh",          "name": "LRKS Management",         "password": "CLET@LRKS2026",  "role": "management", "directorate": "LRKS"},
+    {"email": "ccp@clet.gov.gh",           "name": "CCP Management",          "password": "CLET@CCP2026",   "role": "management", "directorate": "CCP"},
+    {"email": "pc@clet.gov.gh",            "name": "P&C Management",          "password": "CLET@PC2026",    "role": "management", "directorate": "P&C"},
+    {"email": "rmf@clet.gov.gh",           "name": "RMF Management",          "password": "CLET@RMF2026",   "role": "management", "directorate": "RMF"},
+    {"email": "sfl@clet.gov.gh",           "name": "SF&L Management",         "password": "CLET@SFL2026",   "role": "management", "directorate": "SF&L"},
+    {"email": "ca@clet.gov.gh",            "name": "C&A Management",          "password": "CLET@CA2026",    "role": "management", "directorate": "C&A"},
+    {"email": "management@clet.gov.gh",    "name": "Management User",         "password": "CLET@Mgmt2026",  "role": "management", "directorate": None},
 ]
 
 SOS = ["SO1", "SO2", "SO3", "SO4"]
@@ -33,6 +43,7 @@ async def seed():
                     name=u["name"],
                     password_hash=hash_password(u["password"]),
                     role=u["role"],
+                    directorate=u["directorate"],
                 ))
                 print(f"  ✓ Created user: {u['email']}")
             else:

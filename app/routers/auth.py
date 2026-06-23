@@ -24,6 +24,7 @@ async def login(body: LoginRequest, db: AsyncSession = Depends(get_db)):
         role=user.role,
         name=user.name,
         email=user.email,
+        directorate=user.directorate,
     )
 
 

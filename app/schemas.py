@@ -15,6 +15,7 @@ class TokenResponse(BaseModel):
     role: str
     name: str
     email: str
+    directorate: str | None = None
 
 
 class UserOut(BaseModel):
@@ -22,6 +23,7 @@ class UserOut(BaseModel):
     email: str
     name: str
     role: str
+    directorate: str | None = None
 
     model_config = {"from_attributes": True}
 
