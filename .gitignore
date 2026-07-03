@@ -1,6 +1,58 @@
+# Environment / secrets
 .env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
 .venv/
 venv/
+env/
+ENV/
+
+# uv
+.uv/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# Alembic (keep versions, ignore local sqlite dbs)
+*.sqlite3
+*.db
+
+# Logs
+*.log
+logs/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# Project-specific working files
 Act 1170 CLET_Comprehensive_Digital_System_Mapping_v3.docx
 SO's/
-app/__pycache__/seed.cpython-312.pyc
+.superpowers
+.claude/
