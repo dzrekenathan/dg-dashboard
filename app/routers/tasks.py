@@ -8,9 +8,9 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, delete
 from openpyxl import load_workbook, Workbook
 from app.database import get_db
-from app.models import Task, User
+from app.models import Task, User, UserRole
 from app.schemas import TaskOut, TaskUpdate
-from app.core.security import get_current_user, require_management
+from app.core.security import get_current_user, require_role
 from app.core.ws_manager import manager
 
 router = APIRouter(prefix="/tasks", tags=["tasks"])
@@ -76,7 +76,7 @@ async def update_task(
     task_id: str,
     body: TaskUpdate,
     db: AsyncSession = Depends(get_db),
-    user: User = Depends(require_management),
+    user: User = Depends(require_role(UserRole.STAFF, UserRole.SUPER_ADMIN)),
 ):
     result = await db.execute(select(Task).where(Task.id == task_id))
     task = result.scalar_one_or_none()
@@ -103,7 +103,7 @@ async def import_tasks(
     file: UploadFile = File(...),
     so_number: Optional[str] = Query(None, description="If set, only replace tasks for this SO"),
     db: AsyncSession = Depends(get_db),
-    user: User = Depends(require_management),
+    user: User = Depends(require_role(UserRole.STAFF, UserRole.SUPER_ADMIN)),
 ):
     if not file.filename.endswith((".xlsx", ".xls")):
         raise HTTPException(status_code=400, detail="Only .xlsx/.xls files are accepted")

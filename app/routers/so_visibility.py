@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from app.database import get_db
-from app.models import SOVisibility, User
+from app.models import SOVisibility, User, UserRole
 from app.schemas import SOVisibilityMap
-from app.core.security import get_current_user, require_management
+from app.core.security import get_current_user, require_role
 from app.core.ws_manager import manager
 
 router = APIRouter(prefix="/so-visibility", tags=["so-visibility"])
@@ -42,7 +42,7 @@ async def get_visibility(
 async def toggle_visibility(
     so_number: str,
     db: AsyncSession = Depends(get_db),
-    _: User = Depends(require_management),
+    _: User = Depends(require_role(UserRole.STAFF, UserRole.SUPER_ADMIN)),
 ):
     await _ensure_rows(db)
     result = await db.execute(select(SOVisibility).where(SOVisibility.so_number == so_number))

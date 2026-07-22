@@ -1,0 +1,335 @@
+{
+  "clusters": [
+    {
+      "code": "C1",
+      "name": "Governance & Legal Framework",
+      "description": "Board governance, secretariat, compliance and institutional governance systems.",
+      "systems": [
+        {
+          "code": "S001",
+          "name": "Governance Portal",
+          "phase": 1,
+          "description": "CLET entity registration, legal identity management, official seal records."
+        },
+        {
+          "code": "S002",
+          "name": "Board Document Management System",
+          "phase": 1,
+          "description": "Board documents, agenda management, minutes recording."
+        },
+        {
+          "code": "S008",
+          "name": "NBEC Management Portal",
+          "phase": 1,
+          "description": "National Bar Examination Committee member register."
+        }
+      ]
+    },
+    {
+      "code": "C2",
+      "name": "Registry & Student Enrolment",
+      "description": "Student lifecycle management, enrolment, graduation and Roll of Lawyers liaison.",
+      "systems": [
+        {
+          "code": "S014",
+          "name": "Student Information System (SMS)",
+          "phase": 1,
+          "description": "Core student records, academic progression, grading."
+        },
+        {
+          "code": "S015",
+          "name": "Admissions Management",
+          "phase": 1,
+          "description": "LLB verification and admission management."
+        },
+        {
+          "code": "S016",
+          "name": "Enrolment & Registration Portal",
+          "phase": 1,
+          "description": "Online student enrolment and course registration."
+        }
+      ]
+    },
+    {
+      "code": "C3",
+      "name": "Examinations & Assessment",
+      "description": "National Bar Examination, continuous assessment, CBT and results management.",
+      "systems": [
+        {
+          "code": "S028",
+          "name": "Assessment Management System",
+          "phase": 1,
+          "description": "Continuous assessment, grading scale, grade review workflows."
+        },
+        {
+          "code": "S063",
+          "name": "National Bar Examination System (NBES)",
+          "phase": 1,
+          "description": "Computer-based national bar exam delivery and results."
+        },
+        {
+          "code": "S036",
+          "name": "Certification & Enrolment System",
+          "phase": 1,
+          "description": "LPT certificate digital issuance with cryptographic verification."
+        }
+      ]
+    },
+    {
+      "code": "C4",
+      "name": "Learning, Knowledge & Research (LKRP)",
+      "description": "The CLET Learning, Knowledge and Research Platform — library, repositories, legal AI and Africa-wide knowledge hub.",
+      "systems": [
+        {
+          "code": "S104",
+          "name": "Integrated Library Management System (ILS)",
+          "phase": 1,
+          "description": "Core library system: catalogue, circulation, acquisitions."
+        },
+        {
+          "code": "S110",
+          "name": "Legal Research Database Integrations",
+          "phase": 1,
+          "description": "Connectors to Westlaw, LexisNexis, Judy Legal, Dennis Law."
+        },
+        {
+          "code": "S253",
+          "name": "LKRP Portal",
+          "phase": 1,
+          "description": "Main public-facing LKRP portal and user front door."
+        }
+      ]
+    },
+    {
+      "code": "C5",
+      "name": "Accreditation",
+      "description": "University accreditation, inspection, licence management and appeals.",
+      "systems": [
+        {
+          "code": "S048",
+          "name": "Accreditation System",
+          "phase": 1,
+          "description": "Full lifecycle accreditation management: application, assessment, licence issuance, suspension, revocation."
+        },
+        {
+          "code": "S050",
+          "name": "Provisional Licence Manager",
+          "phase": 1,
+          "description": "2-year provisional licence tracking, conditions and renewal alerts."
+        },
+        {
+          "code": "S060",
+          "name": "Public Accreditation Register",
+          "phase": 1,
+          "description": "Real-time searchable public register of accredited institutions."
+        }
+      ]
+    },
+    {
+      "code": "C6",
+      "name": "Finance & Revenue",
+      "description": "Financial management, fee collection, treasury, audit and reporting.",
+      "systems": [
+        {
+          "code": "S132",
+          "name": "Financial Management System",
+          "phase": 1,
+          "description": "Core FMS: fund tracking, expenditure, liability register, financial controls."
+        },
+        {
+          "code": "S140",
+          "name": "Payment System",
+          "phase": 1,
+          "description": "Multi-channel revenue collection: fees, applications, subscriptions."
+        },
+        {
+          "code": "S133",
+          "name": "Budget Management",
+          "phase": 2,
+          "description": "Annual budgeting, variance tracking and reforecast."
+        }
+      ]
+    },
+    {
+      "code": "C7",
+      "name": "Human Resources & People",
+      "description": "Staff lifecycle, recruitment, performance management and employee relations.",
+      "systems": [
+        {
+          "code": "S142",
+          "name": "HRMS",
+          "phase": 1,
+          "description": "Core human resources management: staff records, contracts, lifecycle."
+        },
+        {
+          "code": "S149",
+          "name": "Staff Directory",
+          "phase": 1,
+          "description": "Internal staff directory and contact management."
+        },
+        {
+          "code": "S143",
+          "name": "Recruitment & ATS",
+          "phase": 2,
+          "description": "Applicant tracking system and recruitment workflow."
+        }
+      ]
+    },
+    {
+      "code": "C8",
+      "name": "Law Practice Training",
+      "description": "LPT delivery, pupillage management, practice skills and CPD for call to the bar.",
+      "systems": [
+        {
+          "code": "S069",
+          "name": "LPT Curriculum Manager",
+          "phase": 2,
+          "description": "Curriculum management for the 12-month Law Practice Training programme."
+        },
+        {
+          "code": "S070",
+          "name": "Pupillage Supervisor Portal",
+          "phase": 2,
+          "description": "Supervisor registration, allocation and pupillage monitoring."
+        },
+        {
+          "code": "S076",
+          "name": "Call to the Bar Management",
+          "phase": 2,
+          "description": "Call ceremony management, eligibility and Roll of Lawyers update."
+        }
+      ]
+    },
+    {
+      "code": "C9",
+      "name": "Compliance & Enforcement",
+      "description": "Enterprise risk management, investigations, internal audit and data protection.",
+      "systems": [
+        {
+          "code": "S183",
+          "name": "Enterprise Risk Management Platform",
+          "phase": 1,
+          "description": "ERM framework, risk register, audit findings tracking."
+        },
+        {
+          "code": "S188",
+          "name": "Internal Audit Working Papers",
+          "phase": 1,
+          "description": "Internal audit programme, working papers and findings management."
+        },
+        {
+          "code": "S185",
+          "name": "Investigations Case Management",
+          "phase": 2,
+          "description": "Investigations, complaints and disciplinary case management."
+        }
+      ]
+    },
+    {
+      "code": "C10",
+      "name": "ICT Infrastructure & Security",
+      "description": "Core ICT infrastructure, identity management, cybersecurity and integration.",
+      "systems": [
+        {
+          "code": "S201",
+          "name": "Service Desk & ITSM",
+          "phase": 1,
+          "description": "IT service management, incident and change management."
+        },
+        {
+          "code": "S213",
+          "name": "Identity & Access Management (IAM)",
+          "phase": 1,
+          "description": "SSO, RBAC, MFA and user lifecycle management."
+        },
+        {
+          "code": "S214",
+          "name": "API Gateway",
+          "phase": 1,
+          "description": "Centralised API management, rate limiting and developer portal."
+        }
+      ]
+    },
+    {
+      "code": "C11",
+      "name": "Analytics & Reporting",
+      "description": "National analytics, institutional performance, KPI library and data science.",
+      "systems": [
+        {
+          "code": "S225",
+          "name": "Analytics Dashboard",
+          "phase": 1,
+          "description": "National legal education analytics dashboard for CLET leadership."
+        },
+        {
+          "code": "S226",
+          "name": "Performance & KPI Library",
+          "phase": 1,
+          "description": "National outcome KPIs, performance measures and target management."
+        },
+        {
+          "code": "S229",
+          "name": "Data Quality Management",
+          "phase": 2,
+          "description": "Data quality rules, monitoring and remediation workflows."
+        }
+      ]
+    },
+    {
+      "code": "C12",
+      "name": "Communications & Stakeholder",
+      "description": "External communications, public portal, CRM and stakeholder engagement.",
+      "systems": [
+        {
+          "code": "S080",
+          "name": "Communications System",
+          "phase": 1,
+          "description": "Multi-channel communications: email, SMS, WhatsApp notifications."
+        },
+        {
+          "code": "S081",
+          "name": "Public Website & CMS",
+          "phase": 1,
+          "description": "CLET public website content management system."
+        },
+        {
+          "code": "S088",
+          "name": "Notification Gateway",
+          "phase": 1,
+          "description": "Centralised notification gateway for all CLET systems."
+        }
+      ]
+    },
+    {
+      "code": "C13",
+      "name": "Research & Innovation",
+      "description": "Legal education research, policy, innovation lab and knowledge transfer.",
+      "systems": [
+        {
+          "code": "S090",
+          "name": "Institutional Research Repository (GSL)",
+          "phase": 2,
+          "description": "GSL-specific institutional research repository and outputs management."
+        },
+        {
+          "code": "S091",
+          "name": "Standards & Research Library",
+          "phase": 2,
+          "description": "CLET standards documentation, research evidence and policy library."
+        },
+        {
+          "code": "S094",
+          "name": "Policy Research Platform",
+          "phase": 3,
+          "description": "Legal education policy research, consultation and evidence base."
+        }
+      ]
+    }
+  ],
+  "phase_deadlines": [
+    {"phase": 1, "deadline": "2026-06-30"},
+    {"phase": 2, "deadline": "2026-09-30"},
+    {"phase": 3, "deadline": "2026-12-31"},
+    {"phase": 4, "deadline": "2027-06-30"}
+  ]
+}

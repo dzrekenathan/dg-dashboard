@@ -1,5 +1,5 @@
 import uuid
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, func
 
@@ -98,6 +98,23 @@ async def get_recent_comments(
         )
         for row in rows
     ]
+
+
+@router.get("/bulk", response_model=list[ActivityTrackingOut])
+async def get_bulk_activity_tracking(
+    task_ids: str = Query(..., description="Comma-separated task ids"),
+    db: AsyncSession = Depends(get_db),
+    _=Depends(get_current_user),
+):
+    ids = [t.strip() for t in task_ids.split(",") if t.strip()]
+    if not ids:
+        return []
+
+    rows = (
+        await db.execute(select(ActivityTracking).where(ActivityTracking.task_id.in_(ids)))
+    ).scalars().all()
+
+    return [_to_out(t, await _get_comments(db, t.id)) for t in rows]
 
 
 @router.get("/{task_id}", response_model=list[ActivityTrackingOut])
