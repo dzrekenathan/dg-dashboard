@@ -45,4 +45,5 @@ def verify_id_token(id_token_str: str) -> dict:
         id_token_str,
         google_requests.Request(),
         settings.google_client_id,
+        clock_skew_in_seconds=10,
     )
