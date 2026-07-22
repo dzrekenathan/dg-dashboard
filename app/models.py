@@ -1,23 +1,52 @@
+import enum
 from datetime import datetime, timezone
-from sqlalchemy import String, Integer, Boolean, DateTime, Text, func, UniqueConstraint
+from sqlalchemy import String, Integer, Boolean, DateTime, Text, Enum, func, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column
 from app.database import Base
 from sqlalchemy.dialects.postgresql import UUID
 import uuid
 
+
+class UserRole(str, enum.Enum):
+    STAFF = "staff"
+    DG = "dg"
+    REGISTRAR = "registrar"
+    SUPER_ADMIN = "super_admin"
+
+
+class Directorate(str, enum.Enum):
+    GSL = "GSL"
+    CDT = "CDT"
+    AQAI = "AQAI"
+    LRKS = "LRKS"
+    DTI = "DTI"
+    CCP = "CCP"
+    PTC = "PTC"
+    FRM = "FRM"
+    SFL = "SFL"
+    CA = "CA"
+
+
 class User(Base):
     __tablename__ = "users"
 
     id: Mapped[str] = mapped_column(
-        UUID(as_uuid=False), 
-        primary_key=True, 
+        UUID(as_uuid=False),
+        primary_key=True,
         default=lambda: str(uuid.uuid4())
     )
     email: Mapped[str] = mapped_column(String(255), unique=True, index=True, nullable=False)
     name: Mapped[str] = mapped_column(String(255), nullable=False)
-    password_hash: Mapped[str] = mapped_column(String(255), nullable=False)
-    role: Mapped[str] = mapped_column(String(50), nullable=False)
-    directorate: Mapped[str | None] = mapped_column(String(20), nullable=True, default=None)
+    google_id: Mapped[str | None] = mapped_column(String(255), unique=True, nullable=True)
+    role: Mapped[UserRole] = mapped_column(
+        Enum(UserRole, native_enum=False, length=20, values_callable=lambda e: [m.value for m in e]),
+        nullable=False,
+    )
+    directorate: Mapped[Directorate | None] = mapped_column(
+        Enum(Directorate, native_enum=False, length=10, values_callable=lambda e: [m.value for m in e]),
+        nullable=True,
+        default=None,
+    )
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now()
     )

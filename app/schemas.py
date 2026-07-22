@@ -1,45 +1,39 @@
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel
 from typing import Optional
+from app.models import UserRole, Directorate
 
 
 # ── Auth ──────────────────────────────────────────────────────────────────────
 
-class LoginRequest(BaseModel):
-    email: str
-    password: str
+class ExchangeRequest(BaseModel):
+    code: str
 
 
-class RegisterRequest(BaseModel):
-    email: str
-    name: str
-    password: str
-    directorate: Optional[str] = None
-
-
-class ForgotPasswordRequest(BaseModel):
-    email: str
-
-
-class ResetPasswordRequest(BaseModel):
-    reset_token: str
-    new_password: str
+class OnboardingCompleteRequest(BaseModel):
+    onboarding_token: str
+    directorate: Directorate
 
 
 class TokenResponse(BaseModel):
     access_token: str
     token_type: str = "bearer"
-    role: str
+    role: UserRole
     name: str
     email: str
-    directorate: str | None = None
+    directorate: Directorate | None = None
+
+
+class OnboardingRequiredResponse(BaseModel):
+    needs_onboarding: bool = True
+    onboarding_token: str
 
 
 class UserOut(BaseModel):
-    id: str  # was int
+    id: str
     email: str
     name: str
-    role: str
-    directorate: str | None = None
+    role: UserRole
+    directorate: Directorate | None = None
 
     model_config = {"from_attributes": True}
 

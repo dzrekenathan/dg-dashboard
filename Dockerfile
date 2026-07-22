@@ -16,7 +16,9 @@ RUN uv pip install --system --no-cache \
     "asyncpg>=0.30.0" \
     "alembic>=1.14.0" \
     "python-jose[cryptography]>=3.3.0" \
-    "bcrypt>=4.0.1,<5" \
+    "httpx>=0.27.0" \
+    "google-auth>=2.35.0" \
+    "requests>=2.34.2" \
     "python-multipart>=0.0.18" \
     "openpyxl>=3.1.5" \
     "pydantic-settings>=2.6.0" \
@@ -30,4 +32,4 @@ COPY alembic.ini ./
 EXPOSE 8000
 
 # Call uvicorn directly — no uv run needed, deps are in system Python
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
