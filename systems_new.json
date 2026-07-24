@@ -1,0 +1,2278 @@
+{
+  "clusters": [
+    {
+      "code": "C1",
+      "directorate_code": "Registrar",
+      "directorate_name": "Office of the Registrar",
+      "systems": [
+        {
+          "code": "S001",
+          "name": "Governance Portal",
+          "phase": 1,
+          "source_cluster": "C1 \u00b7 Governance, Board, Statutory & Records",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S002",
+          "name": "Board Document Management System",
+          "phase": 1,
+          "source_cluster": "C1 \u00b7 Governance, Board, Statutory & Records",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S003",
+          "name": "Records Management System (System 05)",
+          "phase": 1,
+          "source_cluster": "C1 \u00b7 Governance, Board, Statutory & Records",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S007",
+          "name": "Legal Education Appeals Tribunal Case Management System",
+          "phase": 2,
+          "source_cluster": "C1 \u00b7 Governance, Board, Statutory & Records",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S009",
+          "name": "Roll of Lawyers Integration",
+          "phase": 3,
+          "source_cluster": "C1 \u00b7 Governance, Board, Statutory & Records",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S036",
+          "name": "Certification & Enrolment System",
+          "phase": 2,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        }
+      ]
+    },
+    {
+      "code": "C2",
+      "directorate_code": "AQAI",
+      "directorate_name": "Accreditation, Quality Assurance & Inspectorate",
+      "systems": [
+        {
+          "code": "S048",
+          "name": "Accreditation System",
+          "phase": 1,
+          "source_cluster": "C2 \u00b7 Accreditation, Quality Assurance & Inspectorate",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S062",
+          "name": "Examination Verification System (System 03)",
+          "phase": 1,
+          "source_cluster": "C5 \u00b7 Assessment & Examinations",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S091",
+          "name": "Inspection Management System",
+          "phase": 2,
+          "source_cluster": "C2 \u00b7 Accreditation, Quality Assurance & Inspectorate",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S092",
+          "name": "Site-Visit Mobile Field App (offline-capable)",
+          "phase": 2,
+          "source_cluster": "C2 \u00b7 Accreditation, Quality Assurance & Inspectorate",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S093",
+          "name": "Peer-Reviewer / External-Assessor Roster & Training",
+          "phase": 2,
+          "source_cluster": "C2 \u00b7 Accreditation, Quality Assurance & Inspectorate",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S094",
+          "name": "Institutional Self-Assessment / SAR Portal",
+          "phase": 1,
+          "source_cluster": "C2 \u00b7 Accreditation, Quality Assurance & Inspectorate",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S095",
+          "name": "Risk-Based Inspection Scoring Engine",
+          "phase": 2,
+          "source_cluster": "C2 \u00b7 Accreditation, Quality Assurance & Inspectorate",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S096",
+          "name": "Complaints, Whistleblowing & Tip-Off Intake (QA)",
+          "phase": 1,
+          "source_cluster": "C2 \u00b7 Accreditation, Quality Assurance & Inspectorate",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S097",
+          "name": "Public Register of Sanctions / Enforcement Actions",
+          "phase": 2,
+          "source_cluster": "C2 \u00b7 Accreditation, Quality Assurance & Inspectorate",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S098",
+          "name": "Continuous-Monitoring Dashboard (between inspections)",
+          "phase": 2,
+          "source_cluster": "C2 \u00b7 Accreditation, Quality Assurance & Inspectorate",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S099",
+          "name": "Programme-Level Accreditation Workflow",
+          "phase": 2,
+          "source_cluster": "C2 \u00b7 Accreditation, Quality Assurance & Inspectorate",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S099b",
+          "name": "Action-Plan & Conditions Management for Suspended Licences",
+          "phase": 1,
+          "source_cluster": "C2 \u00b7 Accreditation, Quality Assurance & Inspectorate",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S099c",
+          "name": "QA Cycle Calendar & Auto-Deadline Engine",
+          "phase": 1,
+          "source_cluster": "C2 \u00b7 Accreditation, Quality Assurance & Inspectorate",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S099d",
+          "name": "Equivalence & Recognition-of-Prior-Learning (RPL) Workflow",
+          "phase": 2,
+          "source_cluster": "C2 \u00b7 Accreditation, Quality Assurance & Inspectorate",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S100",
+          "name": "Standards Benchmarking Database (international)",
+          "phase": 3,
+          "source_cluster": "C2 \u00b7 Accreditation, Quality Assurance & Inspectorate",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S101",
+          "name": "Standards-Drafting & Public-Consultation Workspace",
+          "phase": 2,
+          "source_cluster": "C2 \u00b7 Accreditation, Quality Assurance & Inspectorate",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S102",
+          "name": "Stakeholder 360\u00b0 Survey Engine",
+          "phase": 2,
+          "source_cluster": "C2 \u00b7 Accreditation, Quality Assurance & Inspectorate",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S103",
+          "name": "Quality Codes & Indicators Library",
+          "phase": 2,
+          "source_cluster": "C2 \u00b7 Accreditation, Quality Assurance & Inspectorate",
+          "source_doc": "Act 1170 v3"
+        }
+      ]
+    },
+    {
+      "code": "C3",
+      "directorate_code": "GSL",
+      "directorate_name": "Ghana School of Law",
+      "systems": [
+        {
+          "code": "S027",
+          "name": "NLEMS / Student Information System (System 01)",
+          "phase": 1,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S028",
+          "name": "Student App",
+          "phase": 1,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S029",
+          "name": "LMS / LPT Platform",
+          "phase": 1,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S030",
+          "name": "GSL Management Portal",
+          "phase": 1,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S031",
+          "name": "Hostel & Accommodation Management",
+          "phase": 2,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S032",
+          "name": "Student Welfare & Counselling Case Management",
+          "phase": 1,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S033",
+          "name": "Scholarships, Bursaries & Financial Aid System",
+          "phase": 2,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S034",
+          "name": "Alumni & Member CRM (Bar-Call community)",
+          "phase": 2,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S035",
+          "name": "Student Discipline & Misconduct Case Management",
+          "phase": 2,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S037",
+          "name": "Special Programmes Cohort & Catalogue Engine",
+          "phase": 2,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S038",
+          "name": "Short Courses Platform (System 02)",
+          "phase": 2,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S039",
+          "name": "Pre-Call Ceremony / Convocation Management",
+          "phase": 2,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S040",
+          "name": "Industrial Attachment / Pupillage Placement Portal",
+          "phase": 1,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S041",
+          "name": "Attendance Module (System 04)",
+          "phase": 2,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S042",
+          "name": "Mentor\u2013Mentee Pairing Platform",
+          "phase": 2,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S043",
+          "name": "Co-curricular & Society Management",
+          "phase": 3,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S044",
+          "name": "ID Card, Gown & Physical-Asset Issuance Tracking",
+          "phase": 3,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S045",
+          "name": "Examiner-of-Practice / Pupil-Master Register",
+          "phase": 2,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S046",
+          "name": "Lecture Capture & Video-on-Demand",
+          "phase": 1,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S047",
+          "name": "Translation / Interpretation Booking",
+          "phase": 3,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S052_curr",
+          "name": "Continuing Legal Education (CLE) Credit Tracker",
+          "phase": 2,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        }
+      ]
+    },
+    {
+      "code": "C4",
+      "directorate_code": "LRKS",
+      "directorate_name": "Learning, Research & Knowledge Services",
+      "systems": [
+        {
+          "code": "S004",
+          "name": "Digital Archiving System",
+          "phase": 2,
+          "source_cluster": "C1 \u00b7 Governance, Board, Statutory & Records",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S104",
+          "name": "Integrated Library Management System (ILS)",
+          "phase": 1,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.1 Core Library & Discovery",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S105",
+          "name": "Discovery Layer / Federated Search",
+          "phase": 2,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.1 Core Library & Discovery",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S106",
+          "name": "Institutional Research Repository",
+          "phase": 2,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.5 Research & Scholarly Communications",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S107",
+          "name": "Reference Management & Citation Platform",
+          "phase": 2,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.5 Research & Scholarly Communications",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S108",
+          "name": "Inter-Library Loan (ILL) System",
+          "phase": 2,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.10 User Services & Access",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S109",
+          "name": "Electronic Resource Management (ERM)",
+          "phase": 2,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.1 Core Library & Discovery",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S110",
+          "name": "Legal Research Database Integrations",
+          "phase": 1,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.1 Core Library & Discovery",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S111",
+          "name": "Authority Control & Legal Taxonomy",
+          "phase": 3,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.6 AI & Knowledge Graph",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S112",
+          "name": "DOI / Persistent-Identifier Service",
+          "phase": 3,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.5 Research & Scholarly Communications",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S113",
+          "name": "Rare-Books & Special-Collections Management",
+          "phase": 3,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.4 Archives & Preservation",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S114",
+          "name": "Open-Access & Funder-Mandate Compliance Dashboard",
+          "phase": 3,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.5 Research & Scholarly Communications",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S118",
+          "name": "Reading-List Management",
+          "phase": 2,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.7 Digital Learning Resources",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S119",
+          "name": "RFID Self-Issue Kiosks & Stock-Take Hardware",
+          "phase": 3,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.10 User Services & Access",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S120",
+          "name": "Off-Campus Authentication Proxy (EZproxy/OpenAthens)",
+          "phase": 2,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.10 User Services & Access",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S121",
+          "name": "Digital Preservation Platform (Archivematica/Preservica)",
+          "phase": 3,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.4 Archives & Preservation",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S122",
+          "name": "Plagiarism / Originality Detection (research)",
+          "phase": 2,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.5 Research & Scholarly Communications",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S124",
+          "name": "Knowledge Graph / Linked-Data Platform",
+          "phase": 3,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.6 AI & Knowledge Graph",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S125",
+          "name": "AI Legal-Research Copilot (RAG)",
+          "phase": 2,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.6 AI & Knowledge Graph",
+          "source_doc": "Act 1170 baseline"
+        },
+        {
+          "code": "S253",
+          "name": "CLET African Legal Knowledge & Research Platform (LKRP) Public Portal",
+          "phase": 1,
+          "owner_full": "LRKS+DTI",
+          "source_cluster": "C4.0 Platform Backbone",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S254",
+          "name": "Ghana Legal Education Repository",
+          "phase": 1,
+          "owner_full": "LRKS+GSL",
+          "source_cluster": "C4.2 Ghana Legal Education Repository",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S255",
+          "name": "Ghana Legal Archives Digitisation Workflow",
+          "phase": 2,
+          "owner_full": "LRKS+REG",
+          "source_cluster": "C4.4 Archives & Preservation",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S256",
+          "name": "Legal Rights Clearance & Licensing Management",
+          "phase": 1,
+          "owner_full": "LRKS+Legal",
+          "source_cluster": "C4.9 Rights, Privacy & Assurance",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S257",
+          "name": "Content Ingestion, OCR & Normalisation Pipeline",
+          "phase": 1,
+          "owner_full": "LRKS+DTI",
+          "source_cluster": "C4.3 Content Ingestion & Standards",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S258",
+          "name": "Akoma Ntoso / LegalDocML Markup Engine",
+          "phase": 2,
+          "owner_full": "LRKS+DTI",
+          "source_cluster": "C4.3 Content Ingestion & Standards",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S259",
+          "name": "Ghana Case Law & Legislation Connector",
+          "phase": 1,
+          "owner_full": "LRKS+CCP",
+          "source_cluster": "C4.2 Ghana Legal Knowledge Layer",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S260",
+          "name": "Ghana Legal Gazette & Parliamentary Records Harvester",
+          "phase": 2,
+          "owner_full": "LRKS+CCP",
+          "source_cluster": "C4.2 Ghana Legal Knowledge Layer",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S261",
+          "name": "African Case Law Repository / Index",
+          "phase": 2,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.8 African Legal Knowledge Hub",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S262",
+          "name": "African Legislation & Gazette Database",
+          "phase": 2,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.8 African Legal Knowledge Hub",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S263",
+          "name": "Regional Court, Treaty & Organisation Materials Repository",
+          "phase": 2,
+          "owner_full": "LRKS+CCP",
+          "source_cluster": "C4.8 African Legal Knowledge Hub",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S264",
+          "name": "Comparative African Legal Education Observatory",
+          "phase": 3,
+          "owner_full": "LRKS+CDT+AQAI",
+          "source_cluster": "C4.8 African Legal Knowledge Hub",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S265",
+          "name": "Partner Institution Onboarding & MOU Portal",
+          "phase": 1,
+          "owner_full": "LRKS+CCP",
+          "source_cluster": "C4.11 Partner Onboarding & Ecosystem",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S266",
+          "name": "Partner Metadata Harvesting Hub (OAI-PMH/API)",
+          "phase": 2,
+          "owner_full": "LRKS+DTI",
+          "source_cluster": "C4.11 Partner Onboarding & Ecosystem",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S267",
+          "name": "Law Faculty Repository Connector",
+          "phase": 2,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.11 Partner Onboarding & Ecosystem",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S268",
+          "name": "Legal Journals & Open-Access Publishing Platform",
+          "phase": 2,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.5 Research & Scholarly Communications",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S269",
+          "name": "Research Editorial Workflow & Peer Review System",
+          "phase": 2,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.5 Research & Scholarly Communications",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S270",
+          "name": "Research Ethics & Data Governance Workspace",
+          "phase": 3,
+          "owner_full": "LRKS+C&A",
+          "source_cluster": "C4.9 Rights, Privacy & Assurance",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S271",
+          "name": "Case Brief & Headnote Editorial System",
+          "phase": 2,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.6 AI & Knowledge Graph",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S272",
+          "name": "Legal Citation Normalisation & Citator",
+          "phase": 2,
+          "owner_full": "LRKS+DTI",
+          "source_cluster": "C4.6 AI & Knowledge Graph",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S273",
+          "name": "AI Case Brief & Research Summary Generator",
+          "phase": 2,
+          "owner_full": "LRKS+DTI",
+          "source_cluster": "C4.6 AI & Knowledge Graph",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S274",
+          "name": "Comparative Law AI Assistant",
+          "phase": 3,
+          "owner_full": "LRKS+CDT+DTI",
+          "source_cluster": "C4.6 AI & Knowledge Graph",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S275",
+          "name": "Legal Knowledge Graph Expansion & Entity Resolver",
+          "phase": 3,
+          "owner_full": "LRKS+DTI",
+          "source_cluster": "C4.6 AI & Knowledge Graph",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S276",
+          "name": "Legal Analytics & Citation Impact Dashboard",
+          "phase": 3,
+          "owner_full": "LRKS+DTI",
+          "source_cluster": "C4.12 Analytics & Product Intelligence",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S277",
+          "name": "CPD / Virtual Law School Content Library",
+          "phase": 2,
+          "owner_full": "LRKS+GSL",
+          "source_cluster": "C4.7 Digital Learning Resources",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S278",
+          "name": "Multimedia Legal Learning Studio Repository",
+          "phase": 2,
+          "owner_full": "LRKS+GSL",
+          "source_cluster": "C4.7 Digital Learning Resources",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S279",
+          "name": "Offline Legal Knowledge Pack / Mobile Library",
+          "phase": 2,
+          "owner_full": "LRKS+DTI",
+          "source_cluster": "C4.10 User Services & Access",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S280",
+          "name": "Accessibility & Inclusive Knowledge Services",
+          "phase": 3,
+          "owner_full": "LRKS+DTI",
+          "source_cluster": "C4.10 User Services & Access",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S281",
+          "name": "Research Services Request & Helpdesk",
+          "phase": 2,
+          "owner_full": "LRKS",
+          "source_cluster": "C4.10 User Services & Access",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S282",
+          "name": "Institutional Subscription & Entitlement Manager",
+          "phase": 2,
+          "owner_full": "LRKS+RMF+DTI",
+          "source_cluster": "C4.13 Revenue & Access Products",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S283",
+          "name": "API Gateway for Legal Knowledge Services",
+          "phase": 2,
+          "owner_full": "LRKS+DTI",
+          "source_cluster": "C4.13 Revenue & Access Products",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S284",
+          "name": "Digital Scholarship Lab & Research Project Workspace",
+          "phase": 3,
+          "owner_full": "LRKS+DTI",
+          "source_cluster": "C4.5 Research & Scholarly Communications",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S285",
+          "name": "Rare Legal Museum / Exhibition CMS",
+          "phase": 3,
+          "owner_full": "LRKS+CCP",
+          "source_cluster": "C4.4 Archives & Preservation",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S286",
+          "name": "Legal Forms, Templates & Practice Tools Repository",
+          "phase": 3,
+          "owner_full": "LRKS+GSL",
+          "source_cluster": "C4.13 Revenue & Access Products",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S287",
+          "name": "Professional Knowledge Alerts & Current Awareness",
+          "phase": 2,
+          "owner_full": "LRKS+CCP",
+          "source_cluster": "C4.10 User Services & Access",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S288",
+          "name": "Library Analytics & Collection Development Dashboard",
+          "phase": 2,
+          "owner_full": "LRKS+DTI",
+          "source_cluster": "C4.12 Analytics & Product Intelligence",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S289",
+          "name": "Content Quality Assurance & Source Authority Labeling",
+          "phase": 1,
+          "owner_full": "LRKS+C&A",
+          "source_cluster": "C4.9 Rights, Privacy & Assurance",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S290",
+          "name": "Data Protection, Redaction & Sensitive Records Review",
+          "phase": 2,
+          "owner_full": "LRKS+C&A+DTI",
+          "source_cluster": "C4.9 Rights, Privacy & Assurance",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S291",
+          "name": "Preservation Storage & Disaster Recovery Vault",
+          "phase": 3,
+          "owner_full": "LRKS+DTI",
+          "source_cluster": "C4.4 Archives & Preservation",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S292",
+          "name": "Multilingual Legal Translation & Localisation Service",
+          "phase": 2,
+          "owner_full": "LRKS+CCP",
+          "source_cluster": "C4.8 African Legal Knowledge Hub",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S293",
+          "name": "Global Legal Database Licensing Manager",
+          "phase": 2,
+          "owner_full": "LRKS+RMF",
+          "source_cluster": "C4.13 Revenue & Access Products",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S294",
+          "name": "Jurisdiction and Institution Registry",
+          "phase": 2,
+          "owner_full": "LRKS+CCP",
+          "source_cluster": "C4.11 Partner Onboarding & Ecosystem",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S295",
+          "name": "Knowledge Revenue & Productisation Dashboard",
+          "phase": 4,
+          "owner_full": "LRKS+RMF",
+          "source_cluster": "C4.13 Revenue & Access Products",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S296",
+          "name": "Partner Contribution Analytics & SLA Monitor",
+          "phase": 4,
+          "owner_full": "LRKS+CCP",
+          "source_cluster": "C4.11 Partner Onboarding & Ecosystem",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S297",
+          "name": "External Content Sandbox & Validation Environment",
+          "phase": 3,
+          "owner_full": "LRKS+DTI",
+          "source_cluster": "C4.3 Content Ingestion & Standards",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S298",
+          "name": "ORCID / Researcher Profile Integration",
+          "phase": 3,
+          "owner_full": "LRKS+DTI",
+          "source_cluster": "C4.5 Research & Scholarly Communications",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S299",
+          "name": "Open Educational Resources (OER) & Course Pack Builder",
+          "phase": 3,
+          "owner_full": "LRKS+CDT+GSL",
+          "source_cluster": "C4.7 Digital Learning Resources",
+          "source_doc": "LKRP Expansion"
+        },
+        {
+          "code": "S300",
+          "name": "Legal Data Standards & Interoperability Registry",
+          "phase": 4,
+          "owner_full": "LRKS+DTI+C&A",
+          "source_cluster": "C4.3 Content Ingestion & Standards",
+          "source_doc": "LKRP Expansion"
+        }
+      ]
+    },
+    {
+      "code": "C5",
+      "directorate_code": "CDT",
+      "directorate_name": "Curriculum Development & Training",
+      "systems": [
+        {
+          "code": "S008",
+          "name": "NBEC Management Portal",
+          "phase": 1,
+          "source_cluster": "C1 \u00b7 Governance, Board, Statutory & Records",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S048bis_curr",
+          "name": "Curriculum Mapping & Outcomes Alignment Tool",
+          "phase": 2,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S049_curr",
+          "name": "Curriculum Version Control & Diff Comparison",
+          "phase": 2,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S050_curr",
+          "name": "Comparative-Jurisdiction Curriculum Database",
+          "phase": 3,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S051_curr",
+          "name": "Stakeholder Consultation & Public-Comment Portal",
+          "phase": 2,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S053_curr",
+          "name": "Knowledge Management & Subject-Matter-Expert (SME) Directory",
+          "phase": 2,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S054_curr",
+          "name": "Foresight / Horizon-Scanning Workbench",
+          "phase": 3,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S055_curr",
+          "name": "Pedagogy R&D Sandbox",
+          "phase": 3,
+          "source_cluster": "C3 \u00b7 Student & Academic Lifecycle",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S060",
+          "name": "Examiner & Moderator Roster Management",
+          "phase": 1,
+          "source_cluster": "C5 \u00b7 Assessment & Examinations",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S061",
+          "name": "Item Bank with Psychometric Analytics (IRT/Rasch)",
+          "phase": 1,
+          "source_cluster": "C5 \u00b7 Assessment & Examinations",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S063",
+          "name": "NBES \u2014 National Bar Examination System",
+          "phase": 1,
+          "source_cluster": "C5 \u00b7 Assessment & Examinations",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S064",
+          "name": "Examination Infrastructure / CBT Delivery (System 10B)",
+          "phase": 1,
+          "source_cluster": "C5 \u00b7 Assessment & Examinations",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S065",
+          "name": "OSCE / Practical-Skills Assessment Tracker",
+          "phase": 2,
+          "source_cluster": "C5 \u00b7 Assessment & Examinations",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S066",
+          "name": "Plagiarism & AI-Content Detection Service",
+          "phase": 2,
+          "source_cluster": "C5 \u00b7 Assessment & Examinations",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S067",
+          "name": "Standard-Setting / Pass-Mark Determination Tool",
+          "phase": 1,
+          "source_cluster": "C5 \u00b7 Assessment & Examinations",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S068",
+          "name": "Question-Paper Secure Authoring & Vault",
+          "phase": 1,
+          "source_cluster": "C5 \u00b7 Assessment & Examinations",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S069",
+          "name": "Distributed / Marking-Centre Platform",
+          "phase": 1,
+          "source_cluster": "C5 \u00b7 Assessment & Examinations",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S227",
+          "name": "Predictive / Prescriptive Models \u2014 at-risk Students, Bar-pass propensity",
+          "phase": 2,
+          "source_cluster": "C12 \u00b7 Analytics, Data & Artificial Intelligence",
+          "source_doc": "Act 1170 v3"
+        }
+      ]
+    },
+    {
+      "code": "C6",
+      "directorate_code": "CCP",
+      "directorate_name": "Communications, Comms & Partnerships",
+      "systems": [
+        {
+          "code": "S074",
+          "name": "Comms System (System 21)",
+          "phase": 1,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S075",
+          "name": "Newsletter / Email Marketing Automation",
+          "phase": 1,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S076",
+          "name": "Public-Facing Website CMS (marketing site)",
+          "phase": 1,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S077",
+          "name": "Bulk SMS Gateway",
+          "phase": 1,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S078",
+          "name": "Events Management System (System 08)",
+          "phase": 2,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S079",
+          "name": "Social-Media Management & Listening",
+          "phase": 2,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S080",
+          "name": "Digital Asset Management (DAM) / Brand Portal",
+          "phase": 2,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S081",
+          "name": "Stakeholder / Partner CRM",
+          "phase": 1,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S082",
+          "name": "MOU & Partnership Lifecycle Tracker",
+          "phase": 2,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S083",
+          "name": "International Relations & Protocols Workspace",
+          "phase": 2,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S084",
+          "name": "Visa & Travel Authorisation Workflow",
+          "phase": 2,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S085",
+          "name": "Press / Media Monitoring & Sentiment Analysis",
+          "phase": 2,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S086",
+          "name": "Translation & Localisation Management",
+          "phase": 3,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S087",
+          "name": "Webinar / Live-Streaming Platform",
+          "phase": 2,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S088_consult",
+          "name": "Public-Survey / Consultation Platform",
+          "phase": 2,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S089",
+          "name": "Intranet / Staff Engagement Portal",
+          "phase": 1,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S090_crisis",
+          "name": "Reputation & Crisis-Comms Playbook System",
+          "phase": 1,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S091_donor",
+          "name": "Donor / Annual-Report Microsite Builder",
+          "phase": 3,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S092_kol",
+          "name": "Influencer / KOL & Thought-Leader Tracker",
+          "phase": 3,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S093_pod",
+          "name": "Podcast / Audio Content Platform",
+          "phase": 3,
+          "source_cluster": "C6 \u00b7 Communications, Brand & Stakeholder Engagement",
+          "source_doc": "Act 1170 v3"
+        }
+      ]
+    },
+    {
+      "code": "C7",
+      "directorate_code": "P&C",
+      "directorate_name": "People & Culture (HR)",
+      "systems": [
+        {
+          "code": "S140",
+          "name": "HR Management System (System 09)",
+          "phase": 1,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S142",
+          "name": "Training & Change Management Platform (System 9D)",
+          "phase": 2,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S143",
+          "name": "Applicant Tracking System (ATS)",
+          "phase": 1,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S144_career",
+          "name": "Recruitment Marketing / Career-Site CMS",
+          "phase": 2,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S145",
+          "name": "Learning Experience Platform (LXP) for Staff",
+          "phase": 2,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S145_bgc",
+          "name": "Pre-Employment Background-Check Integration",
+          "phase": 1,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S145b",
+          "name": "Workforce Planning / Headcount Modelling",
+          "phase": 2,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S145c",
+          "name": "Compensation Management & Salary Banding",
+          "phase": 2,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S145fp",
+          "name": "Recruitment Marketing \u2014 Source Analytics & Talent CRM",
+          "phase": 3,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S146_onb",
+          "name": "Onboarding Experience Platform",
+          "phase": 2,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S147_perf",
+          "name": "Performance Management / OKR / 360-Feedback Suite",
+          "phase": 2,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S147c_succ",
+          "name": "Succession Planning & Talent Mapping",
+          "phase": 3,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S148_time",
+          "name": "Time & Attendance with Biometric Clocking",
+          "phase": 1,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S148_well",
+          "name": "Wellness / EAP Portal",
+          "phase": 3,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S149_pen",
+          "name": "Pension & Benefits Administration",
+          "phase": 1,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S149_speak",
+          "name": "Employee Speak-Up / Whistleblower Channel (HR)",
+          "phase": 2,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S150_tax",
+          "name": "Payroll Tax / GRA Filing Automation",
+          "phase": 1,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S150_vol",
+          "name": "Volunteering / Pro-Bono Hours Tracker",
+          "phase": 3,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S151_eng",
+          "name": "Employee-Engagement Pulse Surveys",
+          "phase": 2,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S151_exit",
+          "name": "Exit Interview & Offboarding Workflow",
+          "phase": 2,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S152_rew",
+          "name": "Reward & Recognition / Peer-Kudos Platform",
+          "phase": 3,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S153_dei",
+          "name": "DEI Analytics Dashboard",
+          "phase": 2,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S153_ir",
+          "name": "Industrial-Relations & Grievance Case Management",
+          "phase": 2,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S154_dis",
+          "name": "Disciplinary Hearings Workflow",
+          "phase": 2,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        }
+      ]
+    },
+    {
+      "code": "C8",
+      "directorate_code": "RMF",
+      "directorate_name": "Resource Mobilisation & Finance",
+      "systems": [
+        {
+          "code": "S132",
+          "name": "e-Procurement / Sourcing Suite (PPRA-compliant)",
+          "phase": 1,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S133",
+          "name": "Vendor Master & Supplier Self-Service Portal",
+          "phase": 1,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S134",
+          "name": "e-Invoicing / Receivables Automation",
+          "phase": 2,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S135",
+          "name": "Purchase Order & 3-Way Match Engine",
+          "phase": 1,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S136",
+          "name": "Contract Lifecycle Management (CLM)",
+          "phase": 2,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S137",
+          "name": "Treasury / Cash Management",
+          "phase": 2,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S138",
+          "name": "Financial Management System",
+          "phase": 1,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S139",
+          "name": "Investment Portfolio Management",
+          "phase": 3,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S140fin",
+          "name": "Tax Compliance & Filings",
+          "phase": 1,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S141",
+          "name": "Payment System (System 20)",
+          "phase": 1,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S141_pay",
+          "name": "Payment System (System 20)",
+          "phase": 1,
+          "source_cluster": "C7 \u00b7 People, Talent & Culture (HR)",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S144",
+          "name": "Travel & Expense Management",
+          "phase": 2,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S145p",
+          "name": "Imprest, Petty-Cash & Card-Spend Module",
+          "phase": 2,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S146fp",
+          "name": "Budget Planning, Forecasting & FP&A",
+          "phase": 2,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S147",
+          "name": "Asset Register / Fixed-Asset Management",
+          "phase": 1,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S147inv",
+          "name": "Inventory & Stores Management",
+          "phase": 2,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S148",
+          "name": "Donor Management Module",
+          "phase": 3,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S149",
+          "name": "IFRS / IPSAS Reporting & Consolidation Module",
+          "phase": 2,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S150",
+          "name": "Grants Management for Inbound Donor Funding",
+          "phase": 2,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S150c",
+          "name": "Crowdfunding / Alumni Giving Portal",
+          "phase": 3,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S150d",
+          "name": "Donor & Grant Compliance Reporting Workspace",
+          "phase": 2,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S150sp",
+          "name": "Sponsorship & Membership Subscriptions Management",
+          "phase": 3,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S151_ins",
+          "name": "Insurance Policy Register",
+          "phase": 2,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S151c",
+          "name": "Cost-Recovery / Inter-Directorate Chargeback Engine",
+          "phase": 3,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S151fx",
+          "name": "Foreign Exchange / Multi-Currency Management",
+          "phase": 2,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S190fin",
+          "name": "Anti-Bribery & Corruption Vendor Due-Diligence",
+          "phase": 1,
+          "source_cluster": "C8 \u00b7 Finance, Procurement & Resource Mobilisation",
+          "source_doc": "Act 1170 v3"
+        }
+      ]
+    },
+    {
+      "code": "C9",
+      "directorate_code": "SF&L",
+      "directorate_name": "Safety, Facilities & Logistics",
+      "systems": [
+        {
+          "code": "S152",
+          "name": "Computer-Aided Facility Management (CAFM) / IWMS",
+          "phase": 1,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S153",
+          "name": "Computerised Maintenance Management System (CMMS)",
+          "phase": 1,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S156",
+          "name": "Building Management System (BMS) / IoT",
+          "phase": 2,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S157",
+          "name": "Energy & Sustainability Monitoring",
+          "phase": 2,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S158",
+          "name": "Space Planning & Move Management",
+          "phase": 2,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S159",
+          "name": "Room & Resource Booking System",
+          "phase": 1,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S160",
+          "name": "Visitor Management System (VMS)",
+          "phase": 1,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S160a",
+          "name": "Physical Access Control Integration",
+          "phase": 1,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S161",
+          "name": "CCTV / Video Management System (VMS)",
+          "phase": 1,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S162",
+          "name": "Intrusion Detection & Alarm Monitoring",
+          "phase": 1,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S162a",
+          "name": "Fire-Safety & Life-Safety Monitoring",
+          "phase": 1,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S163",
+          "name": "Health & Safety Incident & Near-Miss Reporting",
+          "phase": 1,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S164",
+          "name": "Permit-to-Work / Hot-Work Authorisation",
+          "phase": 2,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S165",
+          "name": "Risk Assessment Library (HSE)",
+          "phase": 2,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S166",
+          "name": "Fleet & Vehicle Management",
+          "phase": 1,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S167",
+          "name": "GPS / Telematics Tracking",
+          "phase": 2,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S168",
+          "name": "Asset Tagging / RFID / Barcode Inventory",
+          "phase": 2,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S168_fuel",
+          "name": "Fuel Management & Driver Logbooks",
+          "phase": 1,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S168a",
+          "name": "Trip / Driver-Booking Portal",
+          "phase": 2,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S169",
+          "name": "Cleaning & Janitorial Schedule Management",
+          "phase": 2,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S170",
+          "name": "Pest-Control & Hygiene Audit Tracker",
+          "phase": 3,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S171",
+          "name": "Mailroom / Courier & Despatch Tracking",
+          "phase": 1,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S172",
+          "name": "Catering & Cafeteria Management",
+          "phase": 3,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S173",
+          "name": "Event Logistics & Set-Up Workflow",
+          "phase": 2,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S174",
+          "name": "Emergency Mass-Notification System",
+          "phase": 1,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S175",
+          "name": "Crisis & Evacuation Drill Management",
+          "phase": 2,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S176",
+          "name": "Construction Project Management",
+          "phase": 2,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S177",
+          "name": "Lease & Tenancy Management",
+          "phase": 3,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S178",
+          "name": "Waste Management & Recycling Tracking",
+          "phase": 3,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S179",
+          "name": "Lost-and-Found Register",
+          "phase": 3,
+          "source_cluster": "C9 \u00b7 Safety, Facilities & Logistics",
+          "source_doc": "Act 1170 v3"
+        }
+      ]
+    },
+    {
+      "code": "C10",
+      "directorate_code": "C&A",
+      "directorate_name": "Compliance & Audit",
+      "systems": [
+        {
+          "code": "S005",
+          "name": "Policy Management System",
+          "phase": 2,
+          "source_cluster": "C1 \u00b7 Governance, Board, Statutory & Records",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S006",
+          "name": "Policy Lifecycle Workflow with Attestation",
+          "phase": 2,
+          "source_cluster": "C1 \u00b7 Governance, Board, Statutory & Records",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S010",
+          "name": "Conflict-of-Interest Declaration Portal (entity-wide)",
+          "phase": 1,
+          "source_cluster": "C1 \u00b7 Governance, Board, Statutory & Records",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S011",
+          "name": "Gifts, Hospitality & Entertainment Register",
+          "phase": 2,
+          "source_cluster": "C1 \u00b7 Governance, Board, Statutory & Records",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S012",
+          "name": "Code-of-Conduct Acknowledgement & Annual Attestation Engine",
+          "phase": 1,
+          "source_cluster": "C1 \u00b7 Governance, Board, Statutory & Records",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S013",
+          "name": "Compliance Obligations Register",
+          "phase": 1,
+          "source_cluster": "C1 \u00b7 Governance, Board, Statutory & Records",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S014",
+          "name": "Regulatory Horizon Scanning",
+          "phase": 2,
+          "source_cluster": "C1 \u00b7 Governance, Board, Statutory & Records",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S183",
+          "name": "Integrated GRC Platform",
+          "phase": 1,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S185",
+          "name": "Data Protection Impact Assessment (DPIA) Workflow",
+          "phase": 1,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S186",
+          "name": "Data Subject Access Request (DSAR) Management",
+          "phase": 1,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S187",
+          "name": "Records of Processing Activities (RoPA) Register",
+          "phase": 1,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S188",
+          "name": "Privacy / Cookie-Consent Management Platform",
+          "phase": 1,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S189",
+          "name": "Internal Control Framework / Control-Test Workflow",
+          "phase": 2,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S190",
+          "name": "Anti-Bribery & Corruption (ABC) Compliance Platform",
+          "phase": 2,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S191",
+          "name": "Ethics Hotline / Whistleblower Intake (Institutional)",
+          "phase": 1,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S192",
+          "name": "Investigation Case Management",
+          "phase": 1,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S195",
+          "name": "Third-Party / Vendor Risk Management",
+          "phase": 2,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S196",
+          "name": "Internal-Audit Working-Paper Software",
+          "phase": 1,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S197",
+          "name": "Continuous Auditing / Continuous Monitoring (CA/CM)",
+          "phase": 2,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S198",
+          "name": "ERM Platform \u2014 Enterprise Risk Management",
+          "phase": 1,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S199",
+          "name": "Fraud Detection & Forensic Analytics",
+          "phase": 2,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S200",
+          "name": "Risk Bow-Tie / Heat-Map Visualisation",
+          "phase": 2,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S201",
+          "name": "Crisis Management & Incident Communication",
+          "phase": 1,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S201bcm",
+          "name": "Business Continuity Management (BCM) Platform",
+          "phase": 2,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S202",
+          "name": "Audit Universe & Risk-Based Audit Planning Tool",
+          "phase": 2,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S202_ins",
+          "name": "Insurance & Claims Management",
+          "phase": 3,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S203",
+          "name": "Sanctions / PEP / Watchlist Screening",
+          "phase": 2,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S205_inv",
+          "name": "Internal Investigations Mobile Speak-Up App",
+          "phase": 3,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        }
+      ]
+    },
+    {
+      "code": "C11",
+      "directorate_code": "DTI",
+      "directorate_name": "Digital Transformation & Innovation",
+      "systems": [
+        {
+          "code": "S015",
+          "name": "IT Project & Portfolio Management (PPM)",
+          "phase": 1,
+          "source_cluster": "C1 \u00b7 Governance, Board, Statutory & Records",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S016",
+          "name": "Unified Legal Education Portal",
+          "phase": 1,
+          "source_cluster": "C1 \u00b7 Governance, Board, Statutory & Records",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S017",
+          "name": "Data Migration & Cutover System",
+          "phase": 1,
+          "source_cluster": "C1 \u00b7 Governance, Board, Statutory & Records",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S195a",
+          "name": "Vendor / Third-Party IT Risk Platform",
+          "phase": 2,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S204",
+          "name": "Cybersecurity, Audit & Logging System (System 22)",
+          "phase": 1,
+          "source_cluster": "C10 \u00b7 Compliance, Risk, Audit & Data Protection",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S205",
+          "name": "IT Service Management (ITSM) / Service Desk",
+          "phase": 1,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S205_mdm",
+          "name": "Endpoint Management / MDM",
+          "phase": 1,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S205byod",
+          "name": "Mobile Device & BYOD Policy Engine",
+          "phase": 2,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S205dev",
+          "name": "DevOps / CI-CD Toolchain",
+          "phase": 1,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S205lic",
+          "name": "Software Licence Management",
+          "phase": 2,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S205scm",
+          "name": "Source Code Repository & Code Review",
+          "phase": 1,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S206",
+          "name": "Public-Key Infrastructure & Certificate Lifecycle",
+          "phase": 1,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S207",
+          "name": "Trust Services / Qualified Digital-Signature Platform",
+          "phase": 1,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S208",
+          "name": "SIEM (Security Information & Event Management)",
+          "phase": 1,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S208a",
+          "name": "Observability / APM / Log Aggregation",
+          "phase": 1,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S208soar",
+          "name": "SOAR (Security Orchestration, Automation & Response)",
+          "phase": 2,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S209",
+          "name": "Vulnerability Management / Pen-Test Platform",
+          "phase": 1,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S210d",
+          "name": "Data Loss Prevention (DLP)",
+          "phase": 1,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S211",
+          "name": "Configuration Management Database (CMDB)",
+          "phase": 2,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S212",
+          "name": "Privileged Access Management (PAM)",
+          "phase": 1,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S213",
+          "name": "Identity & Access Management (IAM)",
+          "phase": 1,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S214",
+          "name": "Cloud FinOps / Cost Governance",
+          "phase": 2,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S214a",
+          "name": "Container Orchestration & Service Mesh",
+          "phase": 2,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S215",
+          "name": "Innovation Sandbox / Experimentation Environment",
+          "phase": 3,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S217",
+          "name": "API & Integration Layer (System 17)",
+          "phase": 2,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S217a",
+          "name": "API Gateway, Developer Portal & Catalog",
+          "phase": 2,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S220",
+          "name": "Disaster-Recovery Orchestration / Runbook Automation",
+          "phase": 1,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S220s",
+          "name": "Secrets Management",
+          "phase": 1,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S220t",
+          "name": "Test Management & Automated QA Platform",
+          "phase": 2,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S221",
+          "name": "Backup & Immutable Storage Platform",
+          "phase": 1,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S222",
+          "name": "End-User Knowledge Base / Self-Service Portal",
+          "phase": 1,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S223",
+          "name": "Master Data Management (MDM) / Data Catalog",
+          "phase": 2,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S224",
+          "name": "Data Quality & Lineage Tool",
+          "phase": 2,
+          "source_cluster": "C11 \u00b7 IT Operations, Cybersecurity & Platform",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S225",
+          "name": "Analytics Dashboard / Data Warehouse",
+          "phase": 1,
+          "source_cluster": "C12 \u00b7 Analytics, Data & Artificial Intelligence",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S226",
+          "name": "Self-Service BI Tooling",
+          "phase": 2,
+          "source_cluster": "C12 \u00b7 Analytics, Data & Artificial Intelligence",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S228",
+          "name": "Responsible-AI Governance Workspace",
+          "phase": 2,
+          "source_cluster": "C12 \u00b7 Analytics, Data & Artificial Intelligence",
+          "source_doc": "Act 1170 v3"
+        }
+      ]
+    },
+    {
+      "code": "C12",
+      "directorate_code": "DG",
+      "directorate_name": "Office of the Director-General",
+      "systems": []
+    },
+    {
+      "code": "C13",
+      "directorate_code": "DG",
+      "directorate_name": "Office of the Director-General",
+      "systems": [
+        {
+          "code": "S247",
+          "name": "Enterprise M&E Framework (MELF)",
+          "phase": 2,
+          "source_cluster": "C13 \u00b7 Monitoring, Evaluation, Benefits Realisation & Continuous Improvement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S248",
+          "name": "KPI Tracking & Benefits Realisation Platform",
+          "phase": 2,
+          "source_cluster": "C13 \u00b7 Monitoring, Evaluation, Benefits Realisation & Continuous Improvement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S249",
+          "name": "Institutional Performance Review System",
+          "phase": 2,
+          "source_cluster": "C13 \u00b7 Monitoring, Evaluation, Benefits Realisation & Continuous Improvement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S250",
+          "name": "Process Improvement & Lessons-Learned Repository",
+          "phase": 3,
+          "source_cluster": "C13 \u00b7 Monitoring, Evaluation, Benefits Realisation & Continuous Improvement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S251",
+          "name": "Value Tracking & Continuous Service Enhancement Dashboard",
+          "phase": 2,
+          "source_cluster": "C13 \u00b7 Monitoring, Evaluation, Benefits Realisation & Continuous Improvement",
+          "source_doc": "Act 1170 v3"
+        },
+        {
+          "code": "S252",
+          "name": "M&E Governance & Quality Assurance Framework Tool",
+          "phase": 3,
+          "source_cluster": "C13 \u00b7 Monitoring, Evaluation, Benefits Realisation & Continuous Improvement",
+          "source_doc": "Act 1170 v3"
+        }
+      ]
+    }
+  ],
+  "phase_deadlines": [
+    {
+      "phase": 1,
+      "deadline": "2026-07-31"
+    },
+    {
+      "phase": 2,
+      "deadline": "2026-09-30"
+    },
+    {
+      "phase": 3,
+      "deadline": "2026-12-31"
+    },
+    {
+      "phase": 4,
+      "deadline": "2027-06-30"
+    }
+  ]
+}

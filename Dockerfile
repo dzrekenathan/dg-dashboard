@@ -28,6 +28,7 @@ RUN uv pip install --system --no-cache \
 COPY app/ ./app/
 COPY alembic/ ./alembic/
 COPY alembic.ini ./
+COPY systems.json ./
 
 EXPOSE 8000
 

@@ -8,6 +8,7 @@ from sqlalchemy import select
 from app.config import settings
 from app.database import get_db
 from app.models import User, UserRole
+from app.admin_accounts import is_super_admin_email
 
 bearer_scheme = HTTPBearer()
 
@@ -53,3 +54,9 @@ def require_role(*roles: UserRole):
             raise HTTPException(status_code=403, detail="You do not have access to this resource")
         return user
     return _check
+
+
+async def require_super_admin_email(user: User = Depends(get_current_user)) -> User:
+    if not is_super_admin_email(user.email):
+        raise HTTPException(status_code=403, detail="You do not have access to this resource")
+    return user

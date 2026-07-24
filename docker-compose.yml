@@ -28,6 +28,7 @@ services:
         condition: service_healthy
     volumes:
       - ./app:/app/app
+      - ./systems.json:/app/systems.json
 
 volumes:
   postgres_data:
