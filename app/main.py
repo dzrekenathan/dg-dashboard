@@ -6,8 +6,9 @@ from sqlalchemy import select
 from app.config import settings
 from app.database import engine, AsyncSessionLocal
 from app.database import Base
-from app.models import SOVisibility
-from app.routers import auth, tasks, so_visibility, ws, activity_tracking
+from app.models import SOVisibility, PhaseDeadline
+from app.routers import auth, tasks, so_visibility, ws, activity_tracking, systems_status, admin
+from app.systems_catalog import load_phase_deadlines_seed
 
 
 # ── Startup: create tables + seed default data ────────────────────────────────
@@ -21,6 +22,11 @@ async def _bootstrap():
             exists = (await db.execute(select(SOVisibility).where(SOVisibility.so_number == so))).scalar_one_or_none()
             if not exists:
                 db.add(SOVisibility(so_number=so, is_visible=True))
+
+        for phase, deadline in load_phase_deadlines_seed().items():
+            exists = (await db.execute(select(PhaseDeadline).where(PhaseDeadline.phase == phase))).scalar_one_or_none()
+            if not exists:
+                db.add(PhaseDeadline(phase=phase, deadline=deadline))
 
         await db.commit()
 
@@ -53,6 +59,8 @@ app.include_router(tasks.router)
 app.include_router(so_visibility.router)
 app.include_router(ws.router)
 app.include_router(activity_tracking.router)
+app.include_router(systems_status.router)
+app.include_router(admin.router)
 
 
 @app.get("/health")

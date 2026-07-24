@@ -1,6 +1,6 @@
 import enum
-from datetime import datetime, timezone
-from sqlalchemy import String, Integer, Boolean, DateTime, Text, Enum, func, UniqueConstraint
+from datetime import datetime, timezone, date
+from sqlalchemy import String, Integer, Boolean, DateTime, Date, Text, Enum, func, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column
 from app.database import Base
 from sqlalchemy.dialects.postgresql import UUID
@@ -104,3 +104,49 @@ class SOVisibility(Base):
 
     so_number: Mapped[str] = mapped_column(String(10), primary_key=True)
     is_visible: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
+
+
+class SystemProgress(Base):
+    __tablename__ = "system_progress"
+
+    system_code: Mapped[str] = mapped_column(String(20), primary_key=True)
+    status: Mapped[str] = mapped_column(String(20), default="Not Started")
+    progress_pct: Mapped[int] = mapped_column(Integer, default=0)
+    updated_by: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
+    )
+
+
+class PhaseDeadline(Base):
+    __tablename__ = "phase_deadlines"
+
+    phase: Mapped[int] = mapped_column(Integer, primary_key=True)
+    deadline: Mapped[date | None] = mapped_column(Date, nullable=True)
+    updated_by: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
+    )
+
+
+class FlexAdmin(Base):
+    """Emails on this list are asked to choose their access (a directorate, DG or
+    Registrar) every time they sign in, instead of keeping a fixed role."""
+    __tablename__ = "flex_admins"
+
+    email: Mapped[str] = mapped_column(String(255), primary_key=True)
+    added_by: Mapped[str] = mapped_column(String(255), default="")
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+
+class SupportRequest(Base):
+    __tablename__ = "support_requests"
+
+    id: Mapped[str] = mapped_column(
+        UUID(as_uuid=False), primary_key=True, default=lambda: str(uuid.uuid4())
+    )
+    requester_email: Mapped[str] = mapped_column(String(255), nullable=False)
+    requester_name: Mapped[str] = mapped_column(String(255), default="")
+    message: Mapped[str] = mapped_column(Text, nullable=False)
+    status: Mapped[str] = mapped_column(String(20), default="New")
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())

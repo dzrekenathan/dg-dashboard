@@ -41,7 +41,7 @@ def test_exchange_code_for_tokens_posts_to_google_and_returns_json():
 def test_verify_id_token_delegates_to_google_auth_library(monkeypatch):
     captured = {}
 
-    def fake_verify(token, request, audience):
+    def fake_verify(token, request, audience, clock_skew_in_seconds=0):
         captured["token"] = token
         captured["audience"] = audience
         return {"email": "person@gslaw.edu.gh", "sub": "google-sub-1", "name": "Person"}

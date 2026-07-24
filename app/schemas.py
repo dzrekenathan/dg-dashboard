@@ -1,3 +1,4 @@
+from datetime import date, datetime
 from pydantic import BaseModel
 from typing import Optional
 from app.models import UserRole, Directorate
@@ -28,6 +29,17 @@ class OnboardingRequiredResponse(BaseModel):
     onboarding_token: str
 
 
+class RoleSelectionRequiredResponse(BaseModel):
+    needs_role_selection: bool = True
+    role_select_token: str
+
+
+class RoleSelectionCompleteRequest(BaseModel):
+    role_select_token: str
+    role: UserRole
+    directorate: Optional[Directorate] = None
+
+
 class UserOut(BaseModel):
     id: str
     email: str
@@ -36,6 +48,39 @@ class UserOut(BaseModel):
     directorate: Directorate | None = None
 
     model_config = {"from_attributes": True}
+
+
+# ── Flex admins & support requests ──────────────────────────────────────────────
+
+class FlexAdminOut(BaseModel):
+    email: str
+    added_by: str
+    created_at: datetime
+
+    model_config = {"from_attributes": True}
+
+
+class FlexAdminCreate(BaseModel):
+    email: str
+
+
+class SupportRequestCreate(BaseModel):
+    message: str
+
+
+class SupportRequestOut(BaseModel):
+    id: str
+    requester_email: str
+    requester_name: str
+    message: str
+    status: str
+    created_at: datetime
+
+    model_config = {"from_attributes": True}
+
+
+class SupportRequestStatusUpdate(BaseModel):
+    status: str
 
 # ── Tasks ─────────────────────────────────────────────────────────────────────
 
@@ -147,3 +192,33 @@ class RecentCommentOut(BaseModel):
 class WSMessage(BaseModel):
     type: str          # 'TASKS_UPDATED' | 'VISIBILITY_UPDATED' | 'PING'
     payload: dict = {}
+
+
+# ── Systems Status & Phase Deadlines ──────────────────────────────────────────
+
+class SystemProgressOut(BaseModel):
+    system_code: str
+    status: str
+    progress_pct: int
+    updated_by: str | None = None
+    updated_at: datetime
+
+    model_config = {"from_attributes": True}
+
+
+class SystemProgressUpdate(BaseModel):
+    status: Optional[str] = None
+    progress_pct: Optional[int] = None
+
+
+class PhaseDeadlineOut(BaseModel):
+    phase: int
+    deadline: date | None = None
+    updated_by: str | None = None
+    updated_at: datetime
+
+    model_config = {"from_attributes": True}
+
+
+class PhaseDeadlineUpdate(BaseModel):
+    deadline: date

@@ -8,12 +8,14 @@ from sqlalchemy import select
 
 from app.config import settings
 from app.database import get_db
-from app.models import User, UserRole
+from app.models import User, UserRole, FlexAdmin
 from app.schemas import (
     ExchangeRequest,
     OnboardingCompleteRequest,
     TokenResponse,
     OnboardingRequiredResponse,
+    RoleSelectionRequiredResponse,
+    RoleSelectionCompleteRequest,
     UserOut,
 )
 from app.core.security import create_access_token, decode_token, get_current_user
@@ -86,7 +88,10 @@ async def google_callback(code: str, state: str, db: AsyncSession = Depends(get_
     return RedirectResponse(f"{settings.frontend_url}/auth/callback?code={exchange_code}")
 
 
-@router.post("/exchange", response_model=Union[TokenResponse, OnboardingRequiredResponse])
+@router.post(
+    "/exchange",
+    response_model=Union[TokenResponse, OnboardingRequiredResponse, RoleSelectionRequiredResponse],
+)
 async def exchange(body: ExchangeRequest, db: AsyncSession = Depends(get_db)):
     try:
         payload = decode_token(body.code)
@@ -100,12 +105,53 @@ async def exchange(body: ExchangeRequest, db: AsyncSession = Depends(get_db)):
     if not user:
         raise HTTPException(status_code=404, detail="Account not found")
 
+    flex = (await db.execute(select(FlexAdmin).where(FlexAdmin.email == user.email))).scalar_one_or_none()
+    if flex is not None:
+        role_select_token = create_access_token(
+            {"purpose": "role_select", "user_id": user.id},
+            expires_delta=timedelta(minutes=settings.onboarding_token_expire_minutes),
+        )
+        return RoleSelectionRequiredResponse(role_select_token=role_select_token)
+
     if user.role == UserRole.STAFF and user.directorate is None:
         onboarding_token = create_access_token(
             {"purpose": "onboarding", "user_id": user.id},
             expires_delta=timedelta(minutes=settings.onboarding_token_expire_minutes),
         )
         return OnboardingRequiredResponse(onboarding_token=onboarding_token)
+
+    return _issue_session_token(user)
+
+
+@router.post("/role-select/complete", response_model=TokenResponse)
+async def complete_role_selection(body: RoleSelectionCompleteRequest, db: AsyncSession = Depends(get_db)):
+    try:
+        payload = decode_token(body.role_select_token)
+    except HTTPException:
+        raise HTTPException(status_code=400, detail="Role-selection link is invalid or has expired")
+    if payload.get("purpose") != "role_select":
+        raise HTTPException(status_code=400, detail="Invalid role-selection token")
+
+    if body.role not in (UserRole.STAFF, UserRole.DG, UserRole.REGISTRAR):
+        raise HTTPException(status_code=400, detail="Choose a directorate, Director-General or Registrar")
+    if body.role == UserRole.STAFF and body.directorate is None:
+        raise HTTPException(status_code=400, detail="Directorate is required for a staff role")
+
+    result = await db.execute(select(User).where(User.id == payload.get("user_id")))
+    user = result.scalar_one_or_none()
+    if not user:
+        raise HTTPException(status_code=404, detail="Account not found")
+
+    # Re-check flex-admin membership so a stale role-select token can't be used
+    # to escalate an account that's since been removed from the allowlist.
+    flex = (await db.execute(select(FlexAdmin).where(FlexAdmin.email == user.email))).scalar_one_or_none()
+    if flex is None:
+        raise HTTPException(status_code=403, detail="This account is no longer flexible-access")
+
+    user.role = body.role
+    user.directorate = body.directorate if body.role == UserRole.STAFF else None
+    await db.commit()
+    await db.refresh(user)
 
     return _issue_session_token(user)
 
