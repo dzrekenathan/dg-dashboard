@@ -7,8 +7,9 @@ from app.config import settings
 from app.database import engine, AsyncSessionLocal
 from app.database import Base
 from app.models import SOVisibility, PhaseDeadline
-from app.routers import auth, tasks, so_visibility, ws, activity_tracking, systems_status, admin
+from app.routers import auth, tasks, so_visibility, ws, activity_tracking, systems_status, admin, checklist
 from app.systems_catalog import load_phase_deadlines_seed
+from app.checklist_seed import seed_checklist
 
 
 # ── Startup: create tables + seed default data ────────────────────────────────
@@ -29,6 +30,9 @@ async def _bootstrap():
                 db.add(PhaseDeadline(phase=phase, deadline=deadline))
 
         await db.commit()
+
+    async with AsyncSessionLocal() as db:
+        await seed_checklist(db)
 
 
 @asynccontextmanager
@@ -61,6 +65,7 @@ app.include_router(ws.router)
 app.include_router(activity_tracking.router)
 app.include_router(systems_status.router)
 app.include_router(admin.router)
+app.include_router(checklist.router)
 
 
 @app.get("/health")
