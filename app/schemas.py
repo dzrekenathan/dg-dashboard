@@ -222,3 +222,59 @@ class PhaseDeadlineOut(BaseModel):
 
 class PhaseDeadlineUpdate(BaseModel):
     deadline: date
+
+
+# ── Checklist ─────────────────────────────────────────────────────────────────
+
+class ChecklistItemOut(BaseModel):
+    id: str
+    item_order: int
+    section_number: int
+    section_title: str
+    subsection: str
+    item_text: str
+    is_new: bool
+    directorate: str
+    status: str
+    progress_pct: int
+    target_date: str
+    notes: str
+    updated_by: str
+    updated_at: datetime
+
+    model_config = {"from_attributes": True}
+
+
+class ChecklistItemUpdate(BaseModel):
+    status: Optional[str] = None
+    progress_pct: Optional[int] = None
+    target_date: Optional[str] = None
+    notes: Optional[str] = None
+    updated_by: Optional[str] = None
+
+
+class ChecklistCommentCreate(BaseModel):
+    content: str
+    author_name: Optional[str] = None
+
+
+class ChecklistCommentOut(BaseModel):
+    id: str
+    item_id: str
+    author_name: str
+    content: str
+    created_at: datetime
+
+    model_config = {"from_attributes": True}
+
+
+class RecentChecklistCommentOut(BaseModel):
+    id: str
+    author_name: str
+    content: str
+    created_at: datetime
+    item_id: str
+    item_text: str
+    section_number: int
+    section_title: str
+    directorate: str

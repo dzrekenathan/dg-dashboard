@@ -139,6 +139,37 @@ class FlexAdmin(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 
 
+class ChecklistItem(Base):
+    __tablename__ = "checklist_items"
+
+    id: Mapped[str] = mapped_column(String(50), primary_key=True)
+    item_order: Mapped[int] = mapped_column(Integer, default=0, index=True)
+    section_number: Mapped[int] = mapped_column(Integer, nullable=False, index=True)
+    section_title: Mapped[str] = mapped_column(String(255), default="")
+    subsection: Mapped[str] = mapped_column(String(255), default="")
+    item_text: Mapped[str] = mapped_column(Text, nullable=False)
+    is_new: Mapped[bool] = mapped_column(Boolean, default=False)
+    directorate: Mapped[str] = mapped_column(String(20), default="", index=True)
+    status: Mapped[str] = mapped_column(String(50), default="Not Started")
+    progress_pct: Mapped[int] = mapped_column(Integer, default=0)
+    target_date: Mapped[str] = mapped_column(String(50), default="")
+    notes: Mapped[str] = mapped_column(Text, default="")
+    updated_by: Mapped[str] = mapped_column(String(255), default="")
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
+    )
+
+
+class ChecklistComment(Base):
+    __tablename__ = "checklist_comments"
+
+    id: Mapped[str] = mapped_column(String(50), primary_key=True)
+    item_id: Mapped[str] = mapped_column(String(50), nullable=False, index=True)
+    author_name: Mapped[str] = mapped_column(String(255), default="")
+    content: Mapped[str] = mapped_column(Text, default="")
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+
 class SupportRequest(Base):
     __tablename__ = "support_requests"
 

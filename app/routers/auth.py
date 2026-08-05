@@ -20,7 +20,7 @@ from app.schemas import (
 )
 from app.core.security import create_access_token, decode_token, get_current_user
 from app.core import google_oauth
-from app.admin_accounts import get_admin_role
+from app.admin_accounts import get_admin_role, is_test_account_email
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
@@ -58,7 +58,7 @@ async def google_callback(code: str, state: str, db: AsyncSession = Depends(get_
     claims = google_oauth.verify_id_token(tokens["id_token"])
 
     email = claims["email"].lower().strip()
-    if not email.endswith(f"@{settings.allowed_email_domain}"):
+    if not email.endswith(f"@{settings.allowed_email_domain}") and not is_test_account_email(email):
         return RedirectResponse(f"{settings.frontend_url}/login?error=domain_not_allowed")
 
     admin_role = get_admin_role(email)
