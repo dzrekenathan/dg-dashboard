@@ -71,3 +71,8 @@ app.include_router(checklist.router)
 @app.get("/health")
 async def health():
     return {"status": "ok", "service": "GSL M&E Dashboard API"}
+
+
+@app.get("/greetings")
+async def health():
+    return {"status": "ok", "service": "Holla!"}
